@@ -1,0 +1,215 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0e1acc9eb7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>SiLVER KiTCHEN</title>
+</head>
+<body>
+    <header>
+        <div class="first-header">
+            <p>
+                نوصلولك الطلبية حتى لدارك والدفع عند الاستلام
+            </p>
+        </div>
+        <div class="second-header">
+            <div class="left-side">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+            </div>
+            <div class="right-side">
+                <h1>SiLVER KiTCHEN</h1>
+                <i class="fa-solid fa-bars bars"></i>
+            </div>
+        </div>
+    </header>
+        <main>
+            <p class="title">
+                خلاط + مطحنة 1&times;2 بقوة عالية 
+            </p>
+            <div class="img-container">
+                <img src="cat.jpg"> 
+            </div>
+            <div class="price">
+                <span class="old-price">DA 7500</span> DA 5500
+            </div>
+            <div class="form">
+                <form action="insert-data.php" method="post">
+                    <div class="form-container">
+                        <div class="client-info">
+                            <label class="client-info-title">معلومات الزبون</label>
+                            <div class="info">
+                                <input class="last-name-input" name="last_name" type="text" data-type="last-name" placeholder="اللقب" required>
+                                <input class="first-name-input" name="first_name" type="text" data-type="first-name" placeholder="الاسم" required>
+                            </div>
+                            <label class="state">التوصيل</label>
+                            <div class="adress">
+                                <select id="stateSelect" name="state" class="select-input" required>
+                                        <option value>الولاية</option>
+                                        <option value="ادرار : 01">ادرار : 01</option>
+                                        <option value="الشلف : 02">الشلف : 02</option>
+                                        <option value="الاغواط : 03">الاغواط : 03</option>
+                                        <option value="ام البواقي : 04">ام البواقي : 04</option>
+                                        <option value="باتنة : 05"> باتنة : 05</option>
+                                        <option value="بجاية : 06">بجاية : 06</option>
+                                        <option value="بسكرة : 07">بسكرة : 07</option>
+                                        <option value="بشار : 08">بشار : 08</option>
+                                        <option value="البليدة : 09">البليدة : 09</option>
+                                        <option value="البويرة : 10">البويرة : 10</option>
+                                        <option value="تمنراست : 11">تمنراست : 11</option>
+                                        <option value="تبسة : 12">تبسة : 12</option>
+                                        <option value="تلمسان : 13">تلمسان : 13</option>
+                                        <option value="تيارت : 14">تيارت : 14</option>
+                                        <option value="تيزي وزو : 15">تيزي وزو : 15</option>
+                                        <option value="الجزائر : 16">الجزائر : 16</option>
+                                        <option value="الجلفة : 17">الجلفة : 17</option>
+                                        <option value="جيجل : 18">جيجل : 18</option>
+                                        <option value="سطيف : 19">سطيف : 19</option>
+                                        <option value="سعيدة : 20">سعيدة : 20</option>
+                                        <option value="سكيكدة : 21">سكيكدة : 21</option>
+                                        <option value="سيدي بلعباس : 22">سيدي بلعباس : 22</option>
+                                        <option value="عنابة : 23">عنابة : 23</option>
+                                        <option value="قالمة : 24">قالمة : 24</option>
+                                        <option value="قسنطينة : 25">قسنطينة : 25</option>
+                                        <option value="المدية : 26">المدية : 26</option>
+                                        <option value="مستغانم : 27">مستغانم : 27</option>
+                                        <option value="المسيلة : 28">المسيلة : 28</option>
+                                        <option value="معسكر : 29">معسكر : 29</option>
+                                        <option value="ورقلة : 30">ورقلة : 30</option>
+                                        <option value="وهران : 31">وهران : 31</option>
+                                        <option value="البيض : 32">البيض : 32</option>
+                                        <option value="اليزي : 33">اليزي : 33</option>
+                                        <option value="يرج بوعريريج : 34">برج بوعريريج : 34</option>
+                                        <option value="يومرداس : 35">بومرداس : 35</option>
+                                        <option value="الطارف : 36">الطارف : 36</option>
+                                        <option value="تندوف : 37">تندوف : 37</option>
+                                        <option value="تيسمسيلت : 38">تيسمسيلت : 38</option>
+                                        <option value="الوادي : 39">الوادي : 39</option>
+                                        <option value="خنشلة : 40">خنشلة : 40</option>
+                                        <option value="سوق اهراس : 41">سوق اهراس : 41</option>
+                                        <option value="تيبازة : 42">تيبازة : 42</option>
+                                        <option value="ميلة : 43">ميلة : 43</option>
+                                        <option value="عين الدفلى : 44">عين الدفلى : 44</option>
+                                        <option value="النعامة : 45">النعامة : 45</option>
+                                        <option value="تموشنت : 46">تموشنت : 46</option>
+                                        <option value="غرداية : 47">غرداية : 47</option>
+                                        <option value="غليزان : 48">غليزان : 48</option>
+                                        <option value="تيميمون : 49">تيميمون : 49</option>
+                                        <option value="برج باجي مختار : 50">برج باجي مختار : 50</option>
+                                        <option value="اولاد جلال : 51">اولاد جلال : 51</option>
+                                        <option value="بني عباس : 52">بني عباس : 52</option>
+                                        <option value="ان صالح : 53">ان صالح : 53</option>
+                                        <option value="ان قزام : 54">ان قزام : 54</option>
+                                        <option value="تقرت : 55">تقرت : 55</option>
+                                        <option value="جانت : 56">جانت : 56</option>
+                                        <option value="المغير : 57">المغير : 57</option>
+                                        <option value="المنيعة : 58">المنيعة : 58</option>
+                                </select>
+                                <select id="deliveryOption" class="yalidine-delivery" name="delivery_option">
+                                    <option value="office">المكتب</option>
+                                    <option value="house">المنزل</option>
+                                </select>
+                            </div>
+                            <label class="state">التواصل</label>
+                            <div class="contact">
+                                <input class="adress-input" name="address" placeholder="البلدية" type="text">
+                                <input id="numericInput" name="phone_number" class="phone-number-input" placeholder="رقم الهاتف" maxlength="10" type="text">
+                            </div>
+                            <div class="delivery-price">
+                                 <div>
+                                    <p id="result">اختر الولاية</p>
+                                </div>
+                                <div>
+                                    <p class="delivery-title"><i class="fa-solid fa-arrow-left left-arrow"></i>سعر التوصيل -</p>
+                                </div>
+                            </div>
+                            <div class="total-price">
+                                <div>
+                                    <p id="result2">سعر المنتج + سعر التوصيل</p>
+                                </div>
+                                <div>
+                                    <p><i class="fa-solid fa-arrow-left second-left-arrow"></i>المبلغ الاجمالي -</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy-btn">
+                            <button type="submit" class="request-btn" name="submit">الطلب  هنا</button>
+                            <input class="quantity" name="quantity" type="number" min="1">
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="description-1">
+                <h3 class="h3-1">يقوم <span class="span-1">بعدة وظائف</span> مثل <br> , الهرس , التقطيع <br>.الخفق والخلط</h3>
+                <img class="img-h3-1" src="cat.jpg">
+            </div>
+            <div class="description-1">
+                <h3 class="h3-1"><span class="span-1">يطحن</span> و <span class="span-1">يقطع</span>  اي شيئ خضار  <br>.فواكه , مكسرات , لحوم </h3>
+                <img class="img-h3-1" src="cat.jpg">
+            </div>
+        </main>
+        <div class="description-1">
+            <h3 class="h3-1">مناسب <span class="span-1">لتحضير</span> العصائر و <br> .طحن التوابل وغيرها</h3>
+            <img class="img-h3-1" src="cat.jpg">
+        </div>
+        <div class="description-1">
+            <h3 class="h3-1">يحتوي على 4 <span class="span-1">شفرات</span> حادة<br> مصنوعة من الفولاذ <span class="span-1"> المقاوم للصدا</span> .INOX - اينوكس</h3>
+            <div>
+                <img class="img-h3-1" src="cat.jpg">
+                <img class="img-h3-1" src="cat.jpg">
+            </div>
+            <div>
+                <img class="img-h3-1" src="cat.jpg">
+                <img class="img-h3-1" src="cat.jpg">
+            </div>
+        </div>
+        <div class="description-1">
+            <h3 class="h3-1">يحتوي على <span class="span-1"> خلاطين</span> واحد <br>.بسعة 2 لتر و الاخر بسعة 1 لتر </h3>
+            <img class="img-h3-1" src="cat.jpg">
+        </div>
+        <div class="description-1">
+            <h3 class="h3-1">يحتوي على محرك <span class="span-1"> قوي</span><br>.يطاقة مقدرة ب3000 واط </h3>
+            <img class="img-h3-1" src="cat.jpg">
+        </div>
+
+        <div class="description-1">
+            <h3 class="h3-1">قابل للازالة و <span class="span-1">سهل جدا </span><br> .في التنظيف </h3>
+        </div>
+        <hr>
+        <footer>
+            <div class="as-h1-div">
+                <img class="as-h1" src="dots.jpg" alt="">
+            </div>
+            <hr>
+            <p class="footer-title">
+                اتصل بنا
+            </p>
+            <div class="contacts">
+                <div class="facebook contact">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="www.facebook.com">bla bla bla</a>
+                </div>
+                <div class="instagram contact">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="www.instagram.com">bla bla bla</a>
+                </div>
+                <div class="e-mail contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="www.gmail.com"> bla bla bla</a>
+                </div>
+                <div class="location contact">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="www.somewhere.com">bla bla bla</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
